@@ -1,23 +1,77 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See https://gitignore.io for templates. This file is tailored for a React (Node) project.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Dependencies
+node_modules/
 
-# testing
-/coverage
+# Build outputs
+build/
+dist/
+.next/
+out/
 
-# production
-/build
+# Testing / Coverage
+coverage/
+.nyc_output/
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files (keep example envs tracked if any)
+.env
+.env.*
+!.env.example
+
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.turbo/
+.vite/
+.nuxt/
+.docusaurus/
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs and editors
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
+
+# Storybook
+storybook-static/
+
+# Svelte / Next variants (harmless if unused)
+.svelte-kit/
+
+# Tailwind JIT cache
+.tw-cache/
+
+# React Native / Expo (harmless if unused)
+.expo/
+.expo-shared/
+
+# PM2 logs
+pids/
+
+# Local tooling
+.local/
